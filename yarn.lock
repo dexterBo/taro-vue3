@@ -3285,6 +3285,11 @@ data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
+dayjs@^1.8.29:
+  version "1.10.3"
+  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.10.3.tgz?cache=0&sync_timestamp=1610178215007&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdayjs%2Fdownload%2Fdayjs-1.10.3.tgz#cf3357c8e7f508432826371672ebf376cb7d619b"
+  integrity sha1-zzNXyOf1CEMoJjcWcuvzdst9YZs=
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0:
   version "2.6.9"
   resolved "https://registry.npm.taobao.org/debug/download/debug-2.6.9.tgz?cache=0&sync_timestamp=1607566580543&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -5914,6 +5919,11 @@ lodash-es@4.17.15:
   version "4.17.15"
   resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha1-Ib2Wg5NUQS8j16EDQOXqxu5FXXg=
+
+lodash-es@^4.17.15:
+  version "4.17.20"
+  resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.20.tgz?cache=0&sync_timestamp=1608444851021&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash-es%2Fdownload%2Flodash-es-4.17.20.tgz#29f6332eefc60e849f869c264bc71126ad61e8f7"
+  integrity sha1-KfYzLu/GDoSfhpwmS8cRJq1h6Pc=
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -9164,6 +9174,14 @@ tar@^6.0.2:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
+
+taro-ui-vue3@^1.0.0-alpha.17:
+  version "1.0.0-alpha.17"
+  resolved "https://registry.npm.taobao.org/taro-ui-vue3/download/taro-ui-vue3-1.0.0-alpha.17.tgz#1a3015c9b6630ac466b391a86af0744a24243f2d"
+  integrity sha1-GjAVybZjCsRms5GoavB0SiQkPy0=
+  dependencies:
+    dayjs "^1.8.29"
+    lodash-es "^4.17.15"
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.5"

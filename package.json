@@ -13,7 +13,7 @@
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
     "build:tt": "taro build --type tt",
-    "build:h5": "taro build --type h5",
+    "build:h5": "node ./config/h5-building-script.js && taro build --type h5",
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
     "build:jd": "taro build --type jd",
@@ -39,22 +39,23 @@
     "@tarojs/components": "3.0.24",
     "@tarojs/runtime": "3.0.24",
     "@tarojs/taro": "3.0.24",
+    "taro-ui-vue3": "^1.0.0-alpha.17",
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@types/webpack-env": "^1.13.6",
-    "@tarojs/mini-runner": "3.0.24",
     "@babel/core": "^7.8.0",
+    "@tarojs/mini-runner": "3.0.24",
     "@tarojs/webpack-runner": "3.0.24",
-    "babel-preset-taro": "3.0.24",
-    "@vue/compiler-sfc": "^3.0.0",
-    "vue-loader": "^16.0.0-beta.8",
-    "eslint-plugin-vue": "^7.0.0",
-    "eslint-config-taro": "3.0.24",
-    "eslint": "^6.8.0",
-    "stylelint": "9.3.0",
-    "@typescript-eslint/parser": "^2.x",
+    "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^2.x",
-    "typescript": "^3.7.0"
+    "@typescript-eslint/parser": "^2.x",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-preset-taro": "3.0.24",
+    "eslint": "^6.8.0",
+    "eslint-config-taro": "3.0.24",
+    "eslint-plugin-vue": "^7.0.0",
+    "stylelint": "9.3.0",
+    "typescript": "^3.7.0",
+    "vue-loader": "^16.0.0-beta.8"
   }
 }

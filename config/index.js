@@ -8,7 +8,7 @@ const config = {
     828: 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: [],
   defineConstants: {
   },
@@ -45,6 +45,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui-vue3'],
     postcss: {
       autoprefixer: {
         enable: true,
@@ -58,6 +59,13 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
+    },
+    webpackChain(chain) {
+      chain.resolve.alias
+        .set(
+          '@tarojs/components$',
+          '@tarojs/components/dist-h5/vue3/index.js'
+        )
     }
   }
 }
